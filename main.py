@@ -2,8 +2,8 @@
 import imageio.v3 as iio
 
 #  create a list of the image files
-filenames = ['./cats/cat-1.png','./cats/cat-2.png',
-             './cats/cat-3.png'];
+filenames = ['./images/cat-1.png','./images/cat-2.png',
+             './images/cat-3.png'];
 
 # create an empty list to store actual image data 
 # from these files
@@ -15,7 +15,7 @@ for filename in filenames:
     images.append(iio.imread(filename));
 
 # use imwrite method to turn the images into a GIF
-iio.imwrite('cat.gif',images,duration=500,loop=0);
+iio.imwrite('gif/cat.gif',images,duration=500,loop=0);
 
 # team.gif is name for the gif file to be created
 
